@@ -1,4 +1,4 @@
-test_cases_for_authorization_courier = {
+test_cases_for_authorization_courier_valid = {
     "Успешная_авторизация курьера": {
         "request": {
             "login": "Tester_Alina",
@@ -8,7 +8,9 @@ test_cases_for_authorization_courier = {
             "status_code": 200,
             "courier_code": 485450
         }
-    },
+    }
+}
+test_cases_for_authorization_courier_invalid = {
     "Проверка, что приходит ошибка при авторизации с неправильным паролем": {
         "request": {
             "login": "Tester_Alina",

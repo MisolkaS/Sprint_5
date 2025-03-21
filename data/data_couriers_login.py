@@ -94,7 +94,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
 
         }
     },
@@ -105,7 +106,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера с логином из русских букв": {
@@ -115,7 +117,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера с пустым логином": {
@@ -157,7 +160,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где число в строке в логине": {
@@ -167,7 +171,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где спецсимволы в строке в логине": {
@@ -177,7 +182,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где математические символы в строке в логине": {
@@ -187,7 +193,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где строке есть пробелы в логине": {
@@ -197,7 +204,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Успешное добавление курьера с паролем из 4 цифр, и валидными логином и заполненным именем курьера": {
@@ -218,7 +226,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера c пустым паролем": {
@@ -260,7 +269,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера с числом в пароле": {
@@ -271,8 +281,7 @@ test_cases_for_register_new_courier = {
         },
         "response": {
             "status_code": 400,
-            "message": "Курьер не добавлен в БД",
-            "database": "Курьер не добавлен в БД"
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где в пароле буквы": {
@@ -282,7 +291,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где в пароле спецсимволы в строке": {
@@ -292,7 +302,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где в пароле математические символы в строке": {
@@ -302,7 +313,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где в пароле есть пробелы": {
@@ -312,7 +324,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Успешное добавление курьера с валидным логином и паролем, и именем курьера английскими буквами из 4 букв": {
@@ -374,7 +387,8 @@ test_cases_for_register_new_courier = {
             "firstName": None
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера с именем курьера менее 2 символов": {
@@ -384,7 +398,8 @@ test_cases_for_register_new_courier = {
             "firstName": "A"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера с именем курьера из 11 символов": {
@@ -394,7 +409,8 @@ test_cases_for_register_new_courier = {
             "firstName": "AlinaAlinas"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера с числом в имени курьера": {
@@ -404,7 +420,8 @@ test_cases_for_register_new_courier = {
             "firstName": "1234453"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где число в имени курьера": {
@@ -414,7 +431,8 @@ test_cases_for_register_new_courier = {
             "firstName": 12345
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где спецсимволы в строке в имени курьера": {
@@ -424,7 +442,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina%"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где математические символы в строке в имени курьера": {
@@ -434,7 +453,8 @@ test_cases_for_register_new_courier = {
             "firstName": "Alina+"
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     },
     "Ошибка валидации при добавлении курьера, где строке есть пробелы в имени курьера": {
@@ -444,7 +464,8 @@ test_cases_for_register_new_courier = {
             "firstName": " Aliа na "
         },
         "response": {
-            "status_code": 400
+            "status_code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
         }
     }
 }

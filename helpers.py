@@ -64,7 +64,13 @@ def find_courier_by_login(login, password):
                           attachment_type=allure.attachment_type.TEXT)
             return None
 
-
+def create_new_courier_with_login_password(login, password):
+    payload = {
+        "login": login,
+        "password": password
+    }
+    with allure.step('Успешное создание курьера'):
+        requests.post(api_register_courier, json=payload)
 def delete_courier(courier_id):
     with allure.step(f"Удаление курьера с ID: {courier_id}"):
         response = requests.delete(f'{api_register_courier}/{courier_id}')
@@ -81,7 +87,7 @@ def delete_courier(courier_id):
 def cancel_order(track_id):
     with allure.step(f"Отмена заказа с track: {track_id}"):
         response = requests.put(api_order + f"/cancel?track={track_id}")
-        print(f"Ответ сервера: {response.status_code}, тело: {response.text}")
+
         if response.status_code == 200:
             allure.attach(f"Заказ с track {track_id} успешно отменен", name="Результат отмены",
                           attachment_type=allure.attachment_type.TEXT)
@@ -143,3 +149,6 @@ def generate_random_string(length, language='english'):
         letters = 'абвгдежзийклмнопрстуфхцчшщъыьэюя'
     random_string = ''.join(random.choice(letters) for i in range(length))
     return random_string
+
+def check_keys(data, expected):
+    return all(key in data for key in expected)
